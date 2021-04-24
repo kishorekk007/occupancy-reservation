@@ -1,0 +1,105 @@
+<%- include("partial/header.ejs") -%>
+
+    <!-- <script src="/js/dash.js"></script> -->
+    <link rel="stylesheet" href="/css/admindash.css">
+
+
+    <div class="background-white">
+        <div class="classic-tabs border rounded px-4 pt-1">
+
+            <ul class="nav tabs-primary nav-justified bg-dark" id="advancedTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="description-tab" data-toggle="tab" href="#editrequest" role="tab"
+                        aria-controls="description">Edit Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="info-tab" data-toggle="tab" href="#cancelled" role="tab"
+                        aria-controls="info">Cancelled Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="info-tab" data-toggle="tab" href="#reservation" role="tab"
+                        aria-controls="info">Reservation List</a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="advancedTabContent">
+                <div class="tab-pane fade show active" id="editrequest" role="tabpanel">
+                    <h1>Edit Request</h1>
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Review</th>
+                                <th scope="col">Allocate</th>
+                                <th scope="col">Decline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Change Period 1 to 2</td>
+                                <td><button type="button" class="btn btn-success">Allocate</button></td>
+                                <td><button type="button" class="btn btn-danger">Decline</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="cancelled" role="tabpanel">
+                    <h1>cancelled</h1>
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Review</th>
+                                <th scope="col">Allocate</th>
+                                <th scope="col">Decline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Change Period 1 to 2</td>
+                                <td><button type="button" class="btn btn-success">Allocate</button></td>
+                                <td><button type="button" class="btn btn-danger">Decline</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="reservation" role="tabpanel">
+                    <h1>reservation</h1>
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Review</th>
+                                <th scope="col">Allocate</th>
+                                <th scope="col">Decline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Change Period 1 to 2</td>
+                                <td><button type="button" class="btn btn-success">Allocate</button></td>
+                                <td><button type="button" class="btn btn-danger">Decline</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <%- include("partial/footer.ejs") -%>

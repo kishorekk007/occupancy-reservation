@@ -56,6 +56,11 @@ app.get("/reserve",function(req,res){
 res.render("reserve");
 });
 
+app.get("/admindash", function(req,res){
+  res.render("admindash");
+});
+
+
 app.post("/dash",function(req,res){
 
     signin = true;
